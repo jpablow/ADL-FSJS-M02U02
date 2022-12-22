@@ -1,6 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
+    display: flex;
     grid-area: header;
-    border: solid 1px black;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar {
@@ -14,8 +23,12 @@
 }
 
 .footer {
+    display: flex;
     grid-area: footer;
-    border: solid 1px black;
+    background-color: dimgray;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid_container {
@@ -25,4 +38,6 @@
     "sidebar main"
     "footer footer";
     grid-template-columns: 15% auto;
+    grid-auto-rows: 50px auto 50px;
+    min-height: 100vh;
 }
