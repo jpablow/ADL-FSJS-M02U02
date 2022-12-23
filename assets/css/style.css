@@ -23,7 +23,10 @@ body {
 
 .main {
     grid-area: main;
-    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer {
@@ -43,7 +46,6 @@ body {
     "footer footer";
     grid-template-columns: minmax(130px, 150px) minmax(670px, auto);
     grid-auto-rows: 50px auto 50px;
-    min-height: 100vh;
 }
 
 .categories {
@@ -53,4 +55,46 @@ body {
 
 .cat_q {
     opacity: 0.6;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 400px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card_title h3 {
+    font-size: x-large;
+}
+
+.card_title p {
+    font-size: large;
+    color: red;
+}
+
+.card_description {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_button {
+    text-align: center;
+    color: white;
+    background-color: #272c30;
+    height: 50px;
 }
