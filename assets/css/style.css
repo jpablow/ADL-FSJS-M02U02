@@ -41,7 +41,7 @@ body {
     "header header"
     "sidebar main"
     "footer footer";
-    grid-template-columns: minmax(110px, 150px) minmax(690px, auto);
+    grid-template-columns: minmax(130px, 150px) minmax(670px, auto);
     grid-auto-rows: 50px auto 50px;
     min-height: 100vh;
 }
