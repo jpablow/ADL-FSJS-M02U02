@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header {
@@ -8,8 +9,18 @@ body {
     grid-area: header;
     background-color: black;
     color: white;
-    justify-content: center;
+    justify-content: first baseline;
     align-items: center;
+}
+
+.header img {
+    width: 120px;
+    padding-left: 15px ;
+}
+
+.header h1 {
+    padding-left: 30px;
+    font-weight: 300;
 }
 
 .sidebar {
@@ -27,6 +38,8 @@ body {
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
     align-items: center;
+    gap: 30px 0;
+    padding: 30px 0;
 }
 
 .footer {
@@ -45,7 +58,7 @@ body {
     "sidebar main"
     "footer footer";
     grid-template-columns: minmax(130px, 150px) minmax(670px, auto);
-    grid-auto-rows: 50px auto 50px;
+    grid-auto-rows: auto auto 50px;
 }
 
 .categories {
@@ -76,6 +89,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0;
 }
 
 .card_title h3 {
@@ -83,7 +97,7 @@ body {
 }
 
 .card_title p {
-    font-size: large;
+    font-size: larger;
     color: red;
 }
 
@@ -92,9 +106,42 @@ body {
     justify-content: space-evenly;
 }
 
-.card_button {
+.card_description_item {
+    display: flex;
+    align-items: center;
+}
+
+.card_description_item img {
+    width: 24px;
+    height: 24px;
+}
+
+.card_description_item p {
+    padding-left: 5px;
+    margin: 0;
+}
+
+.card_price {
+
+}
+
+.card h2 {
     text-align: center;
+    font-size: xx-large;
+}
+
+.card_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: #272c30;
     height: 50px;
+}
+
+.card_button p {
+    margin: 0;
+    font-weight: 400;
+    font-size: larger;
+    letter-spacing: 2px;
 }
